@@ -1,9 +1,12 @@
 # Coursera
 # R-Programming
 # Assignment 2
-# Inverts and caches a matrix object
+# Creates the inverted matrix
 # 
-
+# This function will create a special "inverted matrix" passed 
+# to the function as argument.
+# The function will invert the matrix, get or set the matrix, 
+# or invert the given matrix.
 makeCacheMatrix <- function(x = numeric()){
     
     # initialize matrix object
@@ -15,9 +18,9 @@ makeCacheMatrix <- function(x = numeric()){
     }
     
     get <- function() x
-    setmatrixinverse <- function(solve) m <<- solve
-    getmatrixinverse <- function() m
+    setmatrix <- function(solve) m <<- solve
+    getmatrix <- function() m
     list(set = set, get = get, 
-         setmatrixinverse = setmatrixinverse,
-         getmatrixinverse = getmatrixinverse)
+         setmatrix = setmatrix,
+         getmatrix = getmatrix)
 }

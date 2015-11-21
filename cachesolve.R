@@ -1,19 +1,23 @@
-# Calculates the mean of the "special" vector
+# Coursera
+# R-Programming
+# Assignment 2
+# Creates the inverse of a matrix of the "special" matrix
 # 
-# first checks if the mean has already been calculated
-# if there, retrieves it, else calculates it
-# saves the newly calculated mean
+# The function first checks if the inverted matrix has 
+# already been created.  If so, it retrieves it from 
+# the cache else the function will create it and 
+# will save the new matrix to the cache
 # 
 cachesolve <- function(x, ...){
-    m <- x$getmatrixinverse()
+    m <- x$getmatrix()
     
     if(!is.null(m)){
-        message("getting cached matrix data")
+        message("getting the cached matrix data")
         return(m)
     }
     
     data <- x$get()
     m <- solve(data, ...)
-    x$setmatrixinverse(m)
+    x$setmatrix(m)
     m
 }

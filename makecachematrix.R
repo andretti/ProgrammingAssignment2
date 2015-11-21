@@ -7,7 +7,7 @@
 # to the function as argument.
 # The function will invert the matrix, get or set the matrix, 
 # or invert the given matrix.
-makeCacheMatrix <- function(x = numeric()){
+makeCacheMatrix <- function(x = matrix()){
     
     # initialize matrix object
     m <- NULL

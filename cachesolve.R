@@ -8,7 +8,7 @@
 # the cache else the function will create it and 
 # will save the new matrix to the cache
 # 
-cachesolve <- function(x, ...){
+cacheSolve <- function(x, ...){
     m <- x$getmatrix()
     
     if(!is.null(m)){
